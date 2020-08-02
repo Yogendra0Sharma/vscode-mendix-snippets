@@ -2,7 +2,7 @@
     "name": "mendix-snippets",
     "displayName": "Mendix Snippets",
     "description": "Visual Studio Code snippets for Mendix Widget Development",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "icon": "img/icon.png",
     "publisher": "yogendrasharma",
     "repository": "https://github.com/Yogendra0Sharma/vscode-mendix-snippets",
@@ -21,11 +21,11 @@
             {
                 "language": "javascript",
                 "path": "./snippets/snippets-js.json"
-              },
-              {
+            },
+            {
                 "language": "typescript",
                 "path": "./snippets/snippets-ts.json"
-              } 
+            }
         ]
     }
 }
