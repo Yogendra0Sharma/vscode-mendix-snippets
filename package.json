@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "icon": "img/icon.png",
     "publisher": "yogendrasharma",
-    "repository": "https://github.com/Yogendra0Sharma/vscode-mendix-client-api-docs",
+    "repository": "https://github.com/Yogendra0Sharma/vscode-mendix-snippets",
     "engines": {
         "vscode": "^1.47.0"
     },
