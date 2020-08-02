@@ -2,7 +2,7 @@
     "name": "mendix-snippets",
     "displayName": "Mendix Snippets",
     "description": "Visual Studio Code snippets for Mendix Widget Development",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "icon": "img/icon.png",
     "publisher": "yogendrasharma",
     "repository": "https://github.com/Yogendra0Sharma/vscode-mendix-snippets",
