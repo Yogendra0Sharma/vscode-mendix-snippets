@@ -1,0 +1,331 @@
+{
+	"MX Widget Property: attribute": {
+		"prefix": "propAttr",
+		"body": [
+			"<property key=\"$1\" type=\"attribute\" entityProperty=\"$2\" required=\"${3|true,false|}\" isPath=\"${4|no,optional,yes|}\" pathType=\"${5|reference,referenceSet|}\">",
+			"    <caption>$6</caption>",
+			"    <category>$7</category>",
+			"    <description>$8</description>",
+			"    <attributeTypes>",
+			"         <attributeType name=\"${9|AutoNumber,Binary,Boolean,DateTime,Decimal,Enum,HashString,Integer,Long,String|}\" />",
+			"    </attributeTypes>",
+			"</property>"
+		],
+		"description": "Add a attribute property to XML"
+	},
+	"MX Widget attribute Types": {
+		"prefix": "attrType",
+		"body": [
+			"<attributeType name=\"${1|AutoNumber,Binary,Boolean,DateTime,Decimal,Enum,HashString,Integer,Long,String|}\" />"
+		],
+		"description": "Add an attribute types, used in <attributeTypes>"
+	},
+	"MX Widget Property: boolean": {
+		"prefix": "propBool",
+		"body": [
+			"<property key=\"$1\" type=\"boolean\" defaultValue=\"$2\">",
+			"    <caption>$3</caption>",
+			"    <category>$4</category>",
+			"    <description>$5</description>",
+			"</property>"
+		],
+		"description": "Add a boolean property to XML"
+	},
+	"MX Widget Property: string": {
+		"prefix": "propStr",
+		"body": [
+			"<property key=\"$1\" type=\"string\" required=\"${2|true,false|}\" defaultValue=\"$3\" multiline=\"${4|true,false|}\">",
+			"    <caption>$5</caption>",
+			"    <category>$6</category>",
+			"    <description>$7</description>",
+			"</property>"
+		],
+		"description": "Add a string property to XML"
+	},
+	"translatable string property": {
+		"prefix": "trs",
+		"body": [
+			"<translation lang=\"${1:en_US}\">$2</translation>"
+		],
+		"description": "Add a translation to a translatable string property"
+	},
+	"MX Widget Property: translatable string": {
+		"prefix": "propTrs",
+		"body": [
+			"<property key=\"$1\" type=\"translatableString\" required=\"${2|true,false|}\">",
+			"    <caption>$3</caption>",
+			"    <category>$4</category>",
+			"    <description>$5</description>",
+			"    <translations>",
+			"         <translation lang=\"en_US\">Add your message here.</translation>",
+			"         <translation lang=\"nl_NL\">Vul hier je bericht in.</translation>",
+			"    </translations>",
+			"</property>"
+		],
+		"description": "Add a translatable string property to XML"
+	},
+	"MX Widget Property: integer": {
+		"prefix": "propInt",
+		"body": [
+			"<property key=\"$1\" type=\"integer\" required=\"${2|true,false|}\" defaultValue=\"$3\">",
+			"    <caption>$4</caption>",
+			"    <category>$5</category>",
+			"    <description>$6</description>",
+			"</property>"
+		],
+		"description": "Add a integer property to XML"
+	},
+	"MX Widget Property: decimal": {
+		"prefix": "propInt",
+		"body": [
+			"<property key=\"$1\" type=\"decimal\" required=\"${2|true,false|}\" defaultValue=\"$3\">",
+			"    <caption>$4</caption>",
+			"    <category>$5</category>",
+			"    <description>$6</description>",
+			"</property>"
+		],
+		"description": "Add a decimal property to XML"
+	},
+	"MX Widget Property: list": {
+		"prefix": "propLs",
+		"body": [
+			"<property key=\"$1\" type=\"object\" isList=\"true\" required=\"${2|true,false|}\">",
+			"    <caption>$3</caption>",
+			"    <category>$4</category>",
+			"    <description>$5</description>",
+			"    <properties>",
+			"       $5",
+			"    </properties>",
+			"</property>"
+		],
+		"description": "Add object list property to XML"
+	},
+	"MX Widget Property: microflow": {
+		"prefix": "propMf",
+		"body": [
+			"<property key=\"$1\" type=\"microflow\" required=\"${2|true,false|}\" entityProperty=\"selectEntityOrDelete\">",
+			"    <caption>$3</caption>",
+			"    <category>$4</category>",
+			"    <description>$5</description>",
+			"    <returnType type=\"${6|Void,Boolean,Integer,Float,DateTime,String,Object|}\" />",
+			"</property>"
+		],
+		"description": "Add microflow property to XML"
+	},
+	"MX Widget Property: nanoflow": {
+		"prefix": "propNf",
+		"body": [
+			"<property key=\"$1\" type=\"nanoflow\" required=\"${2|true,false|}\" needsEntityContext=\"${3|true,false|}\" entityProperty=\"selectEntityOrDelete\">",
+			"    <caption>$4</caption>",
+			"    <category>$5</category>",
+			"    <description>$6</description>",
+			"    <returnType type=\"${7|Void,Boolean,Integer,Float,DateTime,String,Object|}\" />",
+			"</property>"
+		],
+		"description": "Add nanoflow property to XML"
+	},
+	"MX Widget Property: enumeration": {
+		"prefix": "propEnum",
+		"body": [
+			"<property key=\"$1\" type=\"enumeration\" defaultValue=\"$2\">",
+			"    <caption>$3</caption>",
+			"    <category>$4</category>",
+			"    <description>$5</description>",
+			"    <enumerationValues>",
+			"         <enumerationValue key=\"$2\">Default value</enumerationValue>",
+			"    </enumerationValues>",
+			"</property>"
+		],
+		"description": "Add enumeration property to XML"
+	},
+	"MX Widget Property: enumeration value": {
+		"prefix": "propEnumValue",
+		"body": [
+			"<enumerationValue key=\"$1\">$2</enumerationValue>"
+		],
+		"description": "Add enumeration value to to enumeration property"
+	},
+	"MX Widget Property: entity": {
+		"prefix": "propEntity",
+		"body": [
+			"<property key=\"$1\" type=\"entity\" required=\"${2|true,false|}\">",
+			"    <caption>$3</caption>",
+			"    <category>$4</category>",
+			"    <description>$5</description>",
+			"</property>"
+		],
+		"description": "Add enumeration property to XML"
+	},
+	"MX Widget Property: form": {
+		"prefix": "propForm",
+		"body": [
+			"<property key=\"$1\" type=\"form\" required=\"${2|true,false|}\">",
+			"    <caption>$3</caption>",
+			"    <category>$4</category>",
+			"    <description>$5</description>",
+			"</property>"
+		],
+		"description": "Add form property to XML"
+	},
+	"MX Widget Property: image": {
+		"prefix": "propImage",
+		"body": [
+			"<property key=\"$1\" type=\"image\" required=\"${2|true,false|}\">",
+			"    <caption>$3</caption>",
+			"    <category>$4</category>",
+			"    <description>$5</description>",
+			"</property>"
+		],
+		"description": "Add image property to XML"
+	},
+	"MX Widget Property: object list": {
+		"prefix": "propObject",
+		"body": [
+			"<property key=\"$1\" type=\"object\" isList=\"true\">",
+			"    <caption>$2</caption>",
+			"    <category>$3</category>",
+			"    <description>$4</description>",
+			"    <properties>",
+			"    $5",
+			"    </properties>",
+			"</property>"
+		],
+		"description": "Add object list property to XML"
+	},
+	"MX Widget Property: constraint": {
+		"prefix": "propConstraint",
+		"body": [
+			"<property key=\"$1\" type=\"entityConstraint\" required=\"${2|true,false|}\" entityProperty=\"selectEntityOrDelete\">",
+			"    <caption>$3</caption>",
+			"    <category>$4</category>",
+			"    <description>$5</description>",
+			"</property>"
+		],
+		"description": "Add constraint property to XML"
+	},
+	"MX Widget prop: required": {
+		"prefix": "required",
+		"body": "required=\"${1|true,false|}\"",
+		"description": "Add required true/false"
+	},
+	"MX Widget prop: allowNonPersistent": {
+		"prefix": "allowNon",
+		"body": "allowNonPersistableEntities=\"${1|true,false|}\"",
+		"description": "Add required true/false"
+	},
+	"Comment": {
+		"prefix": "comment",
+		"body": "<!-- ${1} -->",
+		"description": "Add comment"
+	},
+	"MX Widget Property: group": {
+		"prefix": "propGroup",
+		"body": [
+			"<propertyGroup caption=\"$1\">",
+			"    $2",
+			"</propertyGroup>"
+		],
+		"description": "Add a group"
+	},
+	"MX Widget Plugin: action": {
+		"prefix": "propAction",
+		"body": [
+			"<property key=\"$1\" type=\"action\" required=\"${2|true,false|}\">",
+			"    <caption>$3</caption>",
+			"    <description>$4</description>",
+			"</property>"
+		],
+		"description": "Add a pluggable widget action"
+	},
+	"MX Widget Plugin: file": {
+		"prefix": "propFile",
+		"body": [
+			"<property key=\"$1\" type=\"file\" required=\"${2|true,false|}\">",
+			"    <caption>$3</caption>",
+			"    <description>$4</description>",
+			"</property>"
+		],
+		"description": "Add a file"
+	},
+	"MX Widget Plugin: textTemplate": {
+		"prefix": "propTextT",
+		"body": [
+			"<property key=\"$1\" type=\"textTemplate\" required=\"${2|true,false|}\">",
+			"    <caption>$3</caption>",
+			"    <description>$4</description>",
+			"    <translations>",
+			"         <translation lang=\"en_US\">Add your message here.</translation>",
+			"         <translation lang=\"nl_NL\">Vul hier je bericht in.</translation>",
+			"    </translations>",
+			"</property>"
+		],
+		"description": "Add a text Template"
+	},
+	"MX Widget Plugin: icon": {
+		"prefix": "propIcon",
+		"body": [
+			"<property key=\"$1\" type=\"icon\" required=\"${2|true,false|}\">",
+			"    <caption>$3</caption>",
+			"    <description>$4</description>",
+			"</property>"
+		],
+		"description": "Add a an icon"
+	},
+	"MX Widget Plugin: Image": {
+		"prefix": "propImage",
+		"body": [
+			"<property key=\"$1\" type=\"image\" required=\"${2|true,false|}\">",
+			"    <caption>$3</caption>",
+			"    <description>$4</description>",
+			"</property>"
+		],
+		"description": "Add a an icon"
+	},
+	"MX Widget Plugin: Widgets": {
+		"prefix": "propWidgets",
+		"body": [
+			"<property key=\"$1\" type=\"widgets\" required=\"${2|true,false|}\" dataSource=\"$3\">",
+			"    <caption>$4</caption>",
+			"    <description>$5</description>",
+			"</property>"
+		],
+		"description": "Add a widgets"
+	},
+	"MX Widget Plugin: DataSource": {
+		"prefix": "propDatasource",
+		"body": [
+			"<property key=\"$1\" type=\"datasource\" isList=\"true\" required=\"${2|true,false|}\">",
+			"    <caption>$3</caption>",
+			"    <description>$4</description>",
+			"</property>"
+		],
+		"description": "Add a widgets"
+	},
+	"MX Widget Property: Expression": {
+		"prefix": "propExpression",
+		"body": [
+			"<property key=\"$1\" type=\"expression\" required=\"${2|true,false|}\" defaultValue=\"'$3'\">",
+			"    <caption>$4</caption>",
+			"    <description>$5</description>",
+			"    <returnType type=\"${6|Boolean,Integer,DateTime,String,Decimal|}\" />",
+			"</property>"
+		],
+		"description": "Add microflow property to XML"
+	},
+	"MX System prop: Label": {
+		"prefix": "propLabel",
+		"body": "<systemProperty key=\"Label\"/>",
+		"description": ""
+	},
+	"MX System prop: Visibility": {
+		"prefix": "propVisibility",
+		"body": "<systemProperty key=\"Visibility\"/>",
+		"description": ""
+	},
+	"MX System prop: Editability": {
+		"prefix": "propEditability",
+		"body": "<systemProperty key=\"Editability\"/>",
+		"description": ""
+	}
+	
+}

@@ -1,0 +1,31 @@
+{
+    "name": "mendix-snippets",
+    "displayName": "Mendix Snippets",
+    "description": "Visual Studio Code snippets for Mendix Widget Development",
+    "version": "1.0.0",
+    "icon": "img/icon.png",
+    "publisher": "yogendrasharma",
+    "repository": "https://github.com/Yogendra0Sharma/vscode-mendix-client-api-docs",
+    "engines": {
+        "vscode": "^1.47.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "xml",
+                "path": "./snippets/snippets-xml.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets-js.json"
+              },
+              {
+                "language": "typescript",
+                "path": "./snippets/snippets-ts.json"
+              } 
+        ]
+    }
+}
